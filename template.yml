@@ -1,0 +1,30 @@
+# info: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html
+
+#sam deploy --s3-bucket NAME_OF_THE_BUCKET_CREATED  --stack-name CHOOSE_STACK_NAME  --capabilities CAPABILITY_IAM
+
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: Applicazione Servless Prodotti
+
+Globals:
+  Function:
+    Runtime: java17
+    MemorySize: 512
+    Timeout: 25
+    
+Resources:
+
+  ProductTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      TableName: product
+      PrimaryKey:
+        Name: id
+        Type: String
+        
+  LoadProductJava:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: org.springframework.cloud.function.adapter.aws.FunctionInvoker
+      CodeUri: target/load-product-0.0.1-SNAPSHOT-aws.jar
+

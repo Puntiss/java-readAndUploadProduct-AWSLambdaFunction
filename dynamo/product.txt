@@ -1,0 +1,4 @@
+0000;id;imgPath;cost;discountCost;name;desc;category;qtyAvaiable
+0001;https://s3.amazonaws.com/com.appa.product/sancarlo-classica.png;2;1,20;Patatine San Carlo;Dal 1936 le patatine San Carlo cantano le loro canzoni, genuine come una volta e sempre nuove. Per ogni specialità San Carlo sceglie l'interprete più adatta: patate di altissima qualità, coltivate con cura e rispetto dell'ambiente, lavorate con sapienza artigiana e allegria inventiva;chips;5
+0002;https://s3.amazonaws.com/com.appa.product/rickcrock-classica.png;2;1,20;Patatine Crick Crock;Solo patate selezionate, olio, sale, un esclusivo metodo di cottura e 70 anni di esperienza. Le patatine Originali Crik Crok sono amate da tutti, con la loro deliziosa croccantezza e il loro gusto invitante, sono ideali come snack, come contorno ed in generale in ogni occasione. Senza Glutine.;chips;10
+0003;https://s3.amazonaws.com/com.appa.product/caffe-borbbone.png;10;10;Caffe Borbone;Cialde di caffe;coffe;0
